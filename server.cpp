@@ -562,7 +562,7 @@ int main()
     cout << "========================================" << endl;
 
     // CORS 中间件（允许跨域）
-    svr.set_base_dir("./public");
+    svr.set_base_dir("/home/haoW/GobangServer/");
 
     // API: 创建新游戏
     svr.Post("/api/new-game", [&](const httplib::Request &req, httplib::Response &res)
@@ -690,7 +690,7 @@ int main()
 
     if (!svr.listen("0.0.0.0", 8888))
     {
-        cerr << "错误：无法启动服务器，端口8080可能被占用" << endl;
+        cerr << "错误：无法启动服务器，端口8888可能被占用" << endl;
         return 1;
     }
 
