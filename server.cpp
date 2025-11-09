@@ -680,16 +680,15 @@ int main()
                     res.set_header("Access-Control-Allow-Origin", "*");
                     res.set_header("Access-Control-Allow-Methods", "POST, GET, OPTIONS");
                     res.set_header("Access-Control-Allow-Headers", "Content-Type");
-                    res.status = 204; 
-                });
+                    res.status = 204; });
 
     // 启动服务器
     cout << "\n服务器启动中..." << endl;
-    cout << "监听地址: http://127.0.0.1:8888" << endl;
+    cout << "监听地址: http://0.0.0.0:8888" << endl;
     cout << "按 Ctrl+C 停止服务器\n"
          << endl;
 
-    if (!svr.listen("127.0.0.1", 8888))
+    if (!svr.listen("0.0.0.0", 8888))
     {
         cerr << "错误：无法启动服务器，端口8080可能被占用" << endl;
         return 1;
