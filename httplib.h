@@ -10,7 +10,7 @@
 
 #define CPPHTTPLIB_VERSION "0.27.0"
 #define CPPHTTPLIB_VERSION_NUM "0x001B00"
-
+ 
 /*
  * Platform compatibility check
  */
